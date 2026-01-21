@@ -10,7 +10,7 @@ DATE=$(date '+%Y%m%d-%H%M')
 
 # Device
 DEVICE="pissarro"
-DEFCONFIG="${DEVICE}_defconfig"
+DEFCONFIG="pissarro_user_defconfig"
 ZIPNAME="MDYYKernel-${DEVICE}-${DATE}.zip"
 
 echo -e "Building for: $DEVICE\n"
