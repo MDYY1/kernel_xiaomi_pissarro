@@ -731,7 +731,7 @@ ifdef CONFIG_CC_STACKPROTECTOR_REGULAR
   stackp-name := REGULAR
 else
 ifdef CONFIG_CC_STACKPROTECTOR_STRONG
-  stackp-flag := -fstack-protector-strong
+  stackp-flag := 
   stackp-name := STRONG
 else
   # Force off for distro compilers that enable stack protector by default.
