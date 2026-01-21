@@ -10,8 +10,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    #- name: 安装 依赖
-    #  run: sudo apt update && sudo apt upgrade -y && sudo apt install -y ccache 
+    - name: 安装 依赖
+      run: sudo apt update && sudo apt upgrade -y && sudo apt install -y ccache 
       
     - name: configure
       run: chmod +x build.sh && ./build.sh
