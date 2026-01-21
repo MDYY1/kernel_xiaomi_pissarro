@@ -15,3 +15,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: configure
       run: chmod +x build.sh && ./build.sh
+    - name: 安装 依赖
+      run: sudo apt update && sudo apt upgrade -y && sudo apt install -y ccache python3 git curl build-essential libssl-dev bison flex libelf-dev dwarves
